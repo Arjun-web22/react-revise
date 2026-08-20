@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import Students from './pages/Students';
-
+import StudentsDetails from './pages/StudentsDetails';
 
 function App() {
   
@@ -19,7 +19,7 @@ function App() {
       <Route path='/' element={<Home/>}></Route>
       <Route path='/profile' element={<Profile/>}></Route>
       <Route path='/students' element={<Students/>}></Route>
-      
+      <Route path='/students/:id' element={<StudentsDetails/>}></Route>
     </Routes>
     <Footer/>
     </BrowserRouter>
